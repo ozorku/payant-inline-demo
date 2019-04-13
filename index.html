@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Payant inline Demo</title>
+  <link
+   href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+   rel="stylesheet"
+  />
+  <link rel="icon" type="image/x-icon" href="https://payant.ng/favicon.ico" />
+ </head>
+ <body class="px-3">
+  <div
+   class="container mx-auto p-8 bg-purple-darkest my-10 rounded border-green border"
+  >
+   <p class="text-2xl mb-3 text-white">Payant Inline Demo</p>
+   <form action="" name="myForm">
+    <input
+     type="email"
+     name="email"
+     id="email_input"
+     class="w-full rounded p-3 my-3 border"
+     placeholder="Email"
+     required
+    />
+
+    <div class="text-2xl text-white">
+     Payment: <b class="text-green">N2000</b>
+    </div>
+
+    <button
+     type="button"
+     class="bg-green text-white p-3 rounded my-3"
+     onclick="payWithPayant()"
+    >
+     Pay now
+    </button>
+   </form>
+  </div>
+  <!-- Paystack.js -->
+  <script src="https://api.payant.ng/assets/js/inline.min.js"></script>
+  <script src="./script.js"></script>
+ </body>
+</html>
