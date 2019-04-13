@@ -13,7 +13,7 @@ function payWithPayant() {
   return;
  } else {
   var handler = Payant.invoice({
-   key: "ef830c1131b65d81b4cb7137e10d0d3706412b96",
+   key: "PUBLIC KEY",
    client: {
     first_name: "Oginis this",
     last_name: "Oginis that",
